@@ -7,6 +7,7 @@ import Post from "./post";
 import Loading from "./loading";
 import Title from "./title";
 import PageError from "./page-error";
+import { useTransition, animated} from 'react-spring';
 
 /**
  * Theme is the root React component of our theme. The one we will export
@@ -15,6 +16,12 @@ import PageError from "./page-error";
 const Theme = ({ state }) => {
   // Get information about the current URL.
   const data = state.source.get(state.router.link);
+
+  const transitions = useTransition(state.router.link, null, {
+    from: {opacity: 0 },
+    enter: {opacity: 1 },
+    leave: {opacity: 0, display: "none"}
+  })
 
   return (
     <>
@@ -37,12 +44,17 @@ const Theme = ({ state }) => {
       {/* Add the main section. It renders a different component depending
       on the type of URL we are in. */}
       <Main>
-        <Switch>
+        {transitions.map(({props, key }) => (
+          <animated.div style={props} key={key} >
+          <Switch>
           <Loading when={data.isFetching} />
           <List when={data.isArchive} />
           <Post when={data.isPostType} />
           <PageError when={data.isError} />
         </Switch>
+          </animated.div>
+        ))}
+        
       </Main>
     </>
   );
@@ -67,15 +79,11 @@ const HeadContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #1f38c5;
+  background-color: #000000;
 `;
 
 const Main = styled.div`
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(
-    180deg,
-    rgba(66, 174, 228, 0.1),
-    rgba(66, 174, 228, 0)
-  );
+  background-color: #F5FBEF;
 `;

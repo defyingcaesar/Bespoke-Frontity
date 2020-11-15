@@ -2,17 +2,35 @@
   "errors": [],
   "warnings": [],
   "version": "4.44.2",
-  "hash": "1bc63a6c92ca87fc8138",
+  "hash": "72240746422f835867c1",
   "publicPath": "/static/",
   "outputPath": "/home/jet/Projects/bespoke-web/bespoke/build/static",
   "assetsByChunkName": {
-    "bespoke": "bespoke.module.js",
+    "bespoke": [
+      "bespoke.module.js",
+      "bespoke.cccc74e3eccca05d7b44.hot-update.js"
+    ],
     "list": "list.module.js"
   },
   "assets": [
     {
+      "name": "bespoke.cccc74e3eccca05d7b44.hot-update.js",
+      "size": 22972,
+      "chunks": [
+        "bespoke"
+      ],
+      "chunkNames": [
+        "bespoke"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "bespoke.module.js",
-      "size": 5153328,
+      "size": 5402561,
       "chunks": [
         "bespoke"
       ],
@@ -20,6 +38,17 @@
         "bespoke"
       ],
       "info": {},
+      "emitted": false
+    },
+    {
+      "name": "cccc74e3eccca05d7b44.hot-update.json",
+      "size": 49,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
       "emitted": false
     },
     {
@@ -42,7 +71,8 @@
         "bespoke"
       ],
       "assets": [
-        "bespoke.module.js"
+        "bespoke.module.js",
+        "bespoke.cccc74e3eccca05d7b44.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -54,7 +84,8 @@
         "bespoke"
       ],
       "assets": [
-        "bespoke.module.js"
+        "bespoke.module.js",
+        "bespoke.cccc74e3eccca05d7b44.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
