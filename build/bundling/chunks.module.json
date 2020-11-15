@@ -1,0 +1,81 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.44.2",
+  "hash": "1bc63a6c92ca87fc8138",
+  "publicPath": "/static/",
+  "outputPath": "/home/jet/Projects/bespoke-web/bespoke/build/static",
+  "assetsByChunkName": {
+    "bespoke": "bespoke.module.js",
+    "list": "list.module.js"
+  },
+  "assets": [
+    {
+      "name": "bespoke.module.js",
+      "size": 5153328,
+      "chunks": [
+        "bespoke"
+      ],
+      "chunkNames": [
+        "bespoke"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "list.module.js",
+      "size": 47829,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "bespoke": {
+      "chunks": [
+        "bespoke"
+      ],
+      "assets": [
+        "bespoke.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "bespoke": {
+      "chunks": [
+        "bespoke"
+      ],
+      "assets": [
+        "bespoke.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": []
+}
